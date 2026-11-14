@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --background: #080808;
+    --foreground: #ffffff;
+    --brand-black: #080808;
+    --brand-secondary: #111111;
+    --brand-dark: #1a1a1a;
+    --brand-border: #262626;
+    --brand-muted: #a0a0a0;
+    --brand-red: #f2342b;
+    --brand-white: #ffffff;
+  }
+}
+
+body {
+  background-color: #080808;
+  color: #ffffff;
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: #f2342b;
+  color: #ffffff;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #080808;
+}
+::-webkit-scrollbar-thumb {
+  background: #262626;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #f2342b;
+}
+
+.font-display {
+  font-family: var(--font-bebas), "Anton", "Bebas Neue", sans-serif;
+}
+
+.font-tech {
+  font-family: var(--font-space), monospace;
+}
+
+.font-body {
+  font-family: var(--font-inter), sans-serif;
+}
+
+/* Outline typography */
+.text-stroke-outline {
+  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.85);
+  color: transparent;
+}
+.text-stroke-outline-thick {
+  -webkit-text-stroke: 2px rgba(255, 255, 255, 0.9);
+  color: transparent;
+}
+.text-stroke-outline-red {
+  -webkit-text-stroke: 1.5px #f2342b;
+  color: transparent;
+}
+
+/* Subtle image scanline / film grain effect */
+.film-grain {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 25s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
