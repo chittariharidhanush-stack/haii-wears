@@ -95,3 +95,4 @@ export default function FeaturedProducts({ products }: FeaturedProductsProps) {
     </section>
   );
 }
+

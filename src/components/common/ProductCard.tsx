@@ -220,3 +220,4 @@ export default function ProductCard({ product, aspectRatio = "aspect-[3/4]" }: P
     </div>
   );
 }
+

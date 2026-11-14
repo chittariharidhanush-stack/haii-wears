@@ -67,3 +67,4 @@ export async function GET() {
     return NextResponse.json({ error: error.message || "Failed to load admin stats" }, { status: 500 });
   }
 }
+

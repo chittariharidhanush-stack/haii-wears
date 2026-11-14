@@ -979,3 +979,4 @@ export default function AdminClient({ initialUser, categories }: AdminClientProp
     </div>
   );
 }
+

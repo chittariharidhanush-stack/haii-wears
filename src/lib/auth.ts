@@ -37,3 +37,4 @@ export async function getSessionUser(): Promise<UserTokenPayload | null> {
   if (!token) return null;
   return verifyToken(token);
 }
+

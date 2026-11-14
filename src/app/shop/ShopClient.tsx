@@ -275,3 +275,4 @@ export default function ShopClient({ initialProducts, categories }: ShopClientPr
     </div>
   );
 }
+

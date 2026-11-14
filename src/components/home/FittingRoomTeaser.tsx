@@ -120,3 +120,4 @@ export default function FittingRoomTeaser() {
     </section>
   );
 }
+

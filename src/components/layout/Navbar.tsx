@@ -19,6 +19,7 @@ import {
   ShieldCheck
 } from "lucide-react";
 import SearchModal from "./SearchModal";
+import Stage1StatusPill from "@/features/three-d/components/Stage1StatusPill";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -111,6 +112,9 @@ export default function Navbar() {
 
           {/* RIGHT: ACTIONS (CURRENCY, SEARCH, WISHLIST, ACCOUNT, BAG) */}
           <div className="flex items-center gap-3 md:gap-5">
+            {/* Background 3D Engine Status */}
+            <Stage1StatusPill />
+
             {/* Currency Switcher */}
             <div className="relative hidden sm:block">
               <button
@@ -281,3 +285,4 @@ export default function Navbar() {
     </>
   );
 }
+

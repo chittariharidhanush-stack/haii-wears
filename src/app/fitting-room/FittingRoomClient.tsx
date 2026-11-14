@@ -2,7 +2,7 @@
 
 import React from "react";
 import { useSearchParams } from "next/navigation";
-import FittingRoom3D from "@/components/fitting-room/FittingRoom3D";
+import ThreeDLiveStudio from "@/features/three-d/components/ThreeDLiveStudio";
 
 export default function FittingRoomClient() {
   const searchParams = useSearchParams();
@@ -10,7 +10,8 @@ export default function FittingRoomClient() {
 
   return (
     <div className="w-full flex-1 flex flex-col">
-      <FittingRoom3D initialProductId={initialProductId} />
+      <ThreeDLiveStudio initialProductId={initialProductId} />
     </div>
   );
 }
+

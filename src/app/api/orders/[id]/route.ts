@@ -63,3 +63,4 @@ export async function PATCH(req: Request, { params }: { params: Promise<{ id: st
     return NextResponse.json({ error: error.message || "Failed to update order" }, { status: 500 });
   }
 }
+

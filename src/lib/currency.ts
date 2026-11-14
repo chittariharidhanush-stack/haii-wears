@@ -37,3 +37,4 @@ export function formatPrice(amountInINR: number, currencyCode: CurrencyCode = "I
 
   return `${currency.symbol}${converted}`;
 }
+

@@ -5,3 +5,4 @@ export async function POST() {
   response.cookies.delete("hw_auth_token");
   return response;
 }
+

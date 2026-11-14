@@ -66,6 +66,17 @@ export default function RootLayout({
           <CurrencyProvider>
             <CartProvider>
               {children}
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `
+                  if ('serviceWorker' in navigator && window.location.protocol.startsWith('http')) {
+                    window.addEventListener('load', function() {
+                      navigator.serviceWorker.register('/service-worker.js').catch(function() {});
+                    });
+                  }
+                `,
+              }}
+            />
             </CartProvider>
           </CurrencyProvider>
         </AuthProvider>
