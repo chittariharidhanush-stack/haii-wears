@@ -188,3 +188,4 @@ export function getGarmentByProductId(id: string): GarmentManifestEntry | undefi
 export function getAllGarments(): GarmentManifestEntry[] {
   return Object.values(GARMENT_REGISTRY);
 }
+

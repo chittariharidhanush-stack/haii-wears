@@ -14,3 +14,4 @@ export class AvatarStorage {
     await IndexedDBStorage.deleteAvatar(id);
   }
 }
+

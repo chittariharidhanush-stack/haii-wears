@@ -33,3 +33,4 @@ export interface PhotoCaptureInput {
   weightKg?: number;
   unitSystem: "metric" | "imperial";
 }
+

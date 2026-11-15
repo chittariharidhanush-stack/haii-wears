@@ -141,3 +141,4 @@ export class AvatarGenerator {
     return avatarRoot;
   }
 }
+

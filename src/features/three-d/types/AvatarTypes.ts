@@ -24,3 +24,4 @@ export interface AvatarConfig {
   engineVersion: string;
   serializedMesh?: string; // Optional compact representation
 }
+

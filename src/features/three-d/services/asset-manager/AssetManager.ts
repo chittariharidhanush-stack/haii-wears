@@ -265,3 +265,4 @@ export class AssetManager {
     return this.stage2Complete;
   }
 }
+

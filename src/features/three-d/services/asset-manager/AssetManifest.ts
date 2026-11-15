@@ -543,3 +543,4 @@ export function getGarmentAsset(productId: string, size: string): AssetManifestE
   const key = `garment-${productId}-${size}`;
   return ASSET_MANIFEST[key];
 }
+

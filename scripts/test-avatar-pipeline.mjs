@@ -91,3 +91,4 @@ testAvatarPipeline().catch((err) => {
   console.error("Pipeline test error:", err);
   process.exit(1);
 });
+

@@ -44,3 +44,4 @@ export interface CacheMetadata {
   isEssential: boolean;
   usageCount: number;
 }
+

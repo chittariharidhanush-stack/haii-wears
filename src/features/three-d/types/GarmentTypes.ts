@@ -19,3 +19,4 @@ export interface GarmentManifestEntry {
   image: string;
   description?: string;
 }
+

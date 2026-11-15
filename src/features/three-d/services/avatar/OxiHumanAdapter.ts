@@ -110,3 +110,4 @@ export class OxiHumanAdapter {
     this.isInitialized = false;
   }
 }
+
